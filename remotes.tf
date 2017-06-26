@@ -4,7 +4,7 @@ data "terraform_remote_state" "remote" {
 
   config {
     bucket = "{{.Statebucket}}"
-    key    = "{{.RemotePath}}"
+    key    = "{{.Remotepath}}"
     region = "us-east-1"
   }
 }
